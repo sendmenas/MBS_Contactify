@@ -1,0 +1,161 @@
+Global:
+	- padding 0 95px;
+
+Dropdown'as:
+	- fono spalva #0AA3CL 
+	- fono borderio spalva #08829A
+	- apatinio borderio pirmas layeris #0992AD
+	- apatinio borderio antras layeris #23ACC7
+	- width 435px
+	- item'o height tegu buna 80px
+
+Header'is:
+	- Aukstis 190px
+	- Headerio backgroundo spalva - #1B3C43
+	- Headeris turi shadow
+	
+	Logo:
+		- width 400px
+		- height 85px.
+		- margin-right 104px
+	Account dalis:
+		- Account select'o height 75px
+		- Account select'o width 385px
+		- Account select'o spalva #0AA3CL
+	Search laukas:
+		- width 480px
+		- height 85px
+		- font-size 16px
+		- line-height 24px
+		- font Open Sans
+		- color #4F4D43
+		- ikonos box'as 70px
+		- outer border color #496369
+		- lauko vidus kur tekstas Search turi inner shadow'a kaip paveiksliuka uzmesta	
+	Tab'ai:
+		- width 975px
+		- height 80px
+		- background #0CA1BD
+		- shadow opacity 20% nuo juodo
+		- borderis tarp tabu, pirma dalis #0B91AA, antra dalis #25ABC2
+Main'as:
+	- padding-top 40px
+	- tarpas tarp user box'o ir lenteles 33px
+	Filtras:
+		- tarpas tapr name ir city 33px
+		- tarpas tarp city ir checkox'o 43px
+		- tarpas tarp filtro buttono ir checkbox'o 46px
+		Name:
+			- height 84px
+			- width 467px
+			- outer border #489691
+			- inner border #213b3d
+			- font size 26px
+		City:
+			- width 342px
+			- height 84px
+			- outer border #489691
+			- inner border #213b3d
+			- font size 26px
+		Checkbox:
+			- width 45px
+			- height 45px
+			- outer border #489691
+			- inner border #213b3d
+			- font size 26px
+			- tarpas tarp teksto ir box'o 10px
+		Filter button:
+			- width 222px
+			- height 74px
+			- border #5C9398
+			- font size 24px
+		Add new contatc:
+			- height 78px
+			- width 467px
+			- font-size 24px
+			- background #217F7A
+			Pliusas:
+				- dydis 54x54
+				- margin left 10px
+				- background #1A6662
+	User box'as:
+		- label color #949494
+		- data color #4F4D43
+		- width 467px
+		- height 837px
+		- turi shadow on top ir bottom
+		- text margin top 40px
+		User avatar:
+			- dydis 413x413
+			- inner image dydis 397x397
+	Lentele:
+		- color #4F4D43
+		- shadow bottom, left, right
+		Hederis: 
+			- height 50px
+			- font-size 26px
+			Name:
+				- background #0086A5
+				- padding-left 100px
+				- min width 365px
+				Arrow:
+					- padding-right 16px
+			Surname:
+				- background #0390AE
+				- padding-left 40px
+				- min-width 297px
+			City:
+				- background #0799B8
+				- min-width 292px
+			Email:
+				- background #0DADCA
+				- padding-left 22px
+				- min-width 475px
+			Phone:
+				- background #11B6D4
+				- padding-right 40px
+				- min-width 344px
+			Actions:
+				- background #14C0DD
+				- min-width 185px
+		List'as:
+			- eilutes height 90px
+			- akies box'o width 100px
+			- pasirinkto item background #E6F6F9
+Footer'is:
+	- height 310px
+	- padding-top 38px
+	First block:
+		- padding-bottom 34px
+		- background opacity 20%
+	Second block:
+		- first block height 155px;
+		- second block height 153px;
+		- background opacity 40%
+	Third block:
+		- background opacity 20%
+			
+			
+			
+			
+			
+	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		

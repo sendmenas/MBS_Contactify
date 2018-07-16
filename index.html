@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Contactify</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet"></link>
+        <link href="css.css" rel="stylesheet" type="text/css"></link>
+    </head>
+    <body>
+        <div class="page">
+            <header class="header">
+                <div class="header__logo">
+                </div>
+                <nav class="header__tabs">
+                    <ul>
+                        <li name="headerTab">
+                            dashboard
+                        </li>
+                        <li name="headerTab" class="selected-tab">
+                            contacts
+                        </li>
+                        <li name="headerTab">
+                            notifications
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__search">
+                    <input class="search-input" placeholder="Search" type="text">
+                        <div class="search-icon">
+                        </div>
+                    </input>
+                </div>
+                <div class="header__account">
+                	<div class="account-container" id="userAccount">
+    	                <div class="user-icon-white"></div>
+    	                <div>Jorah Mormont</div>
+    	                <div class="dropdown-arrow-white"></div>
+    	            </div>
+    	            <div class="account-actions" id="userAccountActions">
+    	            	<div class="account-actions__row">
+    	            		<div class="row-icon row-icon--groups"></div>
+    	            		<div>Groups</div>
+    	            	</div>
+    	            	<div class="account-actions__row">
+    	            		<div class="row-icon row-icon--contacted"></div>
+    	            		<div>Frequently contacted</div>
+    	            	</div>
+    	            	<div class="account-actions__row">
+    	            		<div class="row-icon row-icon--prefences"></div>
+    	            		<div>Prefences</div>
+    	            	</div>
+    	            	<div class="account-actions__row">
+    	            		<div class="row-icon row-icon--logout"></div>
+    	            		<div class="row-label">Log out</div>
+    	            	</div>
+    	            </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="main__filter">
+                    <div class="filter-name">
+                        <input class="filter-input" placeholder="Name" type="text" id="nameFilter"></input>
+                    </div>
+                    <div class="filter-city" id="cityFilter">
+                        <div id="cityFilterSelection">City</div>
+                        <div class="dropdown-dark"></div>
+                        <div class="filter-city__select" id="citySelect">
+                            <div>City</div>
+                            <div class="cities-container" id="citySelectContainer"></div>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <div class="checkbox__input" id="activeCheckboxContainer">
+                            <input type="checkbox" id="activeCheckbox">
+                            </input>
+                        </div>
+                        <div class="checkbox__label">
+                            Show active
+                        </div>
+                    </div>
+                    <div class="filter-button" id="filterButton">
+                        FILTER
+                    </div>
+                    <div class="filter-button" id="resetFilterButton">
+                        RESET
+                    </div>
+                    <div class="add-contact-button" id="addNewContact">
+                        <div class="add-contact-button__plus">
+                        </div>
+                        ADD NEW CONTRACT
+                    </div>
+                </div>
+                <div class="data-container">
+    	            <div class="user-block">
+    	                <div class="user-block__avatar" id="userAvatar">
+    	                </div>
+    	                <div class="user-block__data">
+    	                    <div class="data-row">
+    	                        <div class="data-row__label">Name:</div>
+    	                        <div class="data-row__data" id="userName"></div>
+    	                    </div>
+    	                    <div class="data-row">
+    	                        <div class="data-row__label">Surname:</div>
+    	                        <div class="data-row__data" id="userSurname"></div>
+    	                    </div>
+    	                    <div class="data-row">
+    	                        <div class="data-row__label">City:</div>
+    	                        <div class="data-row__data" id="userCity"></div>
+    	                    </div>
+    	                    <div class="data-row">
+    	                        <div class="data-row__label">Email:</div>
+    	                        <a class="data-row__data data-row__data--email" id="userEmail"></a>
+    	                    </div>
+    	                    <div class="data-row">
+    	                        <div class="data-row__label">Phone:</div>
+    	                        <div class="data-row__data" id="userPhone"></div>
+    	                    </div>
+    	                </div>
+    	            </div>
+    				<div class="data-table">
+    					<div class="data-table__header">
+    						<div class="column-name">
+    							<div>Name</div>
+    							<div class="sort-arrow-inactive" id="sortName"></div>
+    						</div>
+    						<div class="column-surname">
+                                <div>Surname</div>
+                                <div class="sort-arrow-inactive" id="sortSurname"></div>
+                            </div>
+    						<div class="column-city">City</div>
+    						<div class="column-email">Email</div>
+    						<div class="column-phone">Phone</div>
+    						<div class="column-actions"></div>
+    					</div>
+    					<div class="data-table__data" id="dataTable"></div>
+    				</div>
+    			</div>
+            </main>
+            <footer class="footer">
+            	<div class="footer__left">
+            		<ul class="left-links">
+            			<li>
+            				<a href="">Dashboard</a>
+            			</li>
+            			<li>
+            				<a href="">Contacts</a>
+            			</li>
+            			<li>
+            				<a href="">Notifications</a>
+            			</li>
+            		</ul>
+            		<div class="left-copyright">
+            			<div class="copyright-label">&copy; 2015 Contactify</div>
+            			<ul class="left-links-bottom">
+            				<li>
+            					<a href="">About</a>
+            				</li>
+            				<li>
+            					<a href="">Privacy</a>
+            				</li>
+            			</ul>
+            		</div>
+            	</div>
+            	<div class="footer__center">
+            		<div class="top-box">
+            			<div class="top-box__icon"></div>
+            			<div>
+            				<div>Last synced:</div>
+            				<div id="syncTimeContainer">Not synced</div>
+            			</div>
+            			<button class="top-box__sync-container" id="syncButton">
+            				<div class="sync-icon" id="syncIndicator"></div>
+            				<div>Force sync</div>
+            			</button>
+            		</div>
+            		<div class="bottom-box">
+            			<div  class="bottom-box__icon"></div>
+            			<div>
+            				<div>Help Desk and Resolution center available:</div>
+            				<div>I-IV 8:00-18:00, V 8:00-16:45</div>
+            			</div>
+            		</div>
+            	</div>
+            	<div class="footer__right">
+            		<ul class="right-links">
+            			<li>
+            				<a href="">Groups</a>
+            			</li>
+            			<li>
+            				<a href="">Frequently contacted</a>
+            			</li>
+            			<li>
+            				<a href="">Preferences</a>
+            			</li>
+            			<li>
+            				<a href="">Log out</a>
+            			</li>
+            		</ul>
+            	</div>
+            </footer>
+            <div class="user-data-dialog" id="userDataDialog">
+                <div class="user-data-dialog__container">
+                    <div class="user-data-dialog__container__close" id="userDataDialogClose"></div>
+                    <div class="user-data-dialog__container__row">
+                        <div class="user-data-dialog__container__row__label">Name:</div>
+                        <input type="text" class="user-data-dialog__container__row__input" id="userDataDialogName">
+                    </div>
+                    <div class="user-data-dialog__container__row">
+                        <div class="user-data-dialog__container__row__label">Surname:</div>
+                        <input type="text" class="user-data-dialog__container__row__input" id="userDataDialogSurname">
+                    </div>
+                    <div class="user-data-dialog__container__row">
+                        <div class="user-data-dialog__container__row__label">Avatar:</div>
+                        <input type="text" class="user-data-dialog__container__row__input" id="userDataDialogAvatar">
+                    </div>
+                    <div class="user-data-dialog__container__row">
+                        <div class="user-data-dialog__container__row__label">City:</div>
+                        <input type="text" class="user-data-dialog__container__row__input" id="userDataDialogCity">
+                    </div>
+                    <div class="user-data-dialog__container__row">
+                        <div class="user-data-dialog__container__row__label">Email:</div>
+                        <input type="text" class="user-data-dialog__container__row__input" id="userDataDialogEmail">
+                    </div>
+                    <div class="user-data-dialog__container__row">
+                        <div class="user-data-dialog__container__row__label">Phone:</div>
+                        <input type="text" class="user-data-dialog__container__row__input" id="userDataDialogPhone">
+                    </div>
+                    <div class="user-data-dialog__container__submit" id="userDataDialogSubmit">SUBMIT</div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
