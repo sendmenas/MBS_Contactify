@@ -15,7 +15,7 @@ const regEx = /[^a-zA-Z\s]/g;
 // Header
 const userAccount = document.getElementById('userAccount');
 const userAccountActions = document.getElementById('userAccountActions');
-const headerTabs = document.getElementsByName('headerTab');
+const headerTabs = document.getElementsByClassName('header-tab');
 
 // User Data Box
 const userAvatar = document.getElementById('userAvatar');
@@ -106,9 +106,9 @@ userDataDialogSubmit.addEventListener("click", submitNewData);
 // Header methods
 function addSelectedStyle(event) {
 	for (tab of headerTabs) {
-		tab.className = "";
+		tab.classList.remove("selected-tab");
 	}
-	this.className = "selected-tab";
+	this.classList.add("selected-tab");
 }
 
 function toggleAccountActions(event) {

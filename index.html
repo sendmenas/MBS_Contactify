@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <title>Contactify</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet"></link>
-        <link href="css.css" rel="stylesheet" type="text/css"></link>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+        <link href="css.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="page">
@@ -14,22 +14,14 @@
                 </div>
                 <nav class="header__tabs">
                     <ul>
-                        <li name="headerTab">
-                            dashboard
-                        </li>
-                        <li name="headerTab" class="selected-tab">
-                            contacts
-                        </li>
-                        <li name="headerTab">
-                            notifications
-                        </li>
+                        <li class="header-tab">dashboard</li>
+                        <li class="header-tab selected-tab">contacts</li>
+                        <li class="header-tab">notifications</li>
                     </ul>
                 </nav>
                 <div class="header__search">
                     <input class="search-input" placeholder="Search" type="text">
-                        <div class="search-icon">
-                        </div>
-                    </input>
+                    <div class="search-icon"></div>
                 </div>
                 <div class="header__account">
                 	<div class="account-container" id="userAccount">
@@ -60,7 +52,7 @@
             <main class="main">
                 <div class="main__filter">
                     <div class="filter-name">
-                        <input class="filter-input" placeholder="Name" type="text" id="nameFilter"></input>
+                        <input class="filter-input" placeholder="Name" type="text" id="nameFilter">
                     </div>
                     <div class="filter-city" id="cityFilter">
                         <div id="cityFilterSelection">City</div>
@@ -73,7 +65,6 @@
                     <div class="checkbox">
                         <div class="checkbox__input" id="activeCheckboxContainer">
                             <input type="checkbox" id="activeCheckbox">
-                            </input>
                         </div>
                         <div class="checkbox__label">
                             Show active
@@ -92,7 +83,7 @@
                     </div>
                 </div>
                 <div class="data-container">
-    	            <div class="user-block">
+    	            <aside class="user-block">
     	                <div class="user-block__avatar" id="userAvatar">
     	                </div>
     	                <div class="user-block__data">
@@ -117,7 +108,7 @@
     	                        <div class="data-row__data" id="userPhone"></div>
     	                    </div>
     	                </div>
-    	            </div>
+    	            </aside>
     				<div class="data-table">
     					<div class="data-table__header">
     						<div class="column-name">
@@ -169,10 +160,10 @@
             				<div>Last synced:</div>
             				<div id="syncTimeContainer">Not synced</div>
             			</div>
-            			<button class="top-box__sync-container" id="syncButton">
+            			<div class="top-box__sync-container" id="syncButton">
             				<div class="sync-icon" id="syncIndicator"></div>
             				<div>Force sync</div>
-            			</button>
+            			</div>
             		</div>
             		<div class="bottom-box">
             			<div  class="bottom-box__icon"></div>
@@ -230,6 +221,6 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="script.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
