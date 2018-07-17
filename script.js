@@ -60,18 +60,18 @@ const userDataDialogPhone = document.getElementById('userDataDialogPhone');
 
 // HTML template'as lentelės įrašui
 const Item = ({id, avatar, active, name, surname, city, email, phone, online}) => `
-	<div class="data-item__name">
+	<th class="data-item__name">
 		<div class="${online}"></div>
 		<div>${name}</div>
-	</div>
-	<div class="data-item__surname">${surname}</div>
-	<div class="data-item__city">${city}</div>
-	<div class="data-item__email">${email}</div>
-	<div class="data-item__phone">${phone}</div>
-	<div class="data-item__actions">
+	</th>
+	<th class="data-item__surname">${surname}</th>
+	<th class="data-item__city">${city}</th>
+	<th class="data-item__email">${email}</th>
+	<th class="data-item__phone">${phone}</th>
+	<th class="data-item__actions">
 		<div class="edit-item"></div>
 		<div class="delete-item"></div>
-	</div>
+	</th>
 `;
 
 
@@ -286,7 +286,7 @@ function createItems(instant) {
 		} else {
 			item.online = "user-offline";
 		}
-		let newItem = document.createElement('div');
+		let newItem = document.createElement('tr');
 		newItem.className = "data-item";
 		newItem.setAttribute("id", item.id);
 		newItem.innerHTML = Item(item);

@@ -492,21 +492,28 @@ html, body {
   color: #949494;
   display: flex;
   font-size: 14px;
+  font-weight: normal;
   justify-content: flex-end;
   margin-left: 17px;
   width: 63px;
 }
 .main .data-container .user-block .user-block__data .data-row .data-row__data {
   color: #4F4D43;
+  display: flex;
   font-size: 14px;
+  font-weight: normal;
+  justify-content: flex-start;
   margin-right: 17px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 111px;
+  width: 120px;
 }
 .main .data-container .user-block .user-block__data .data-row .data-row__data.data-row__data--email {
   color: #0E9AC0;
+  cursor: pointer;
+  display: block;
+  text-decoration: underline;
 }
 .main .data-container .data-table {
   box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
@@ -522,7 +529,12 @@ html, body {
   font-weight: bold;
   height: 50px;
 }
-.main .data-container .data-table .data-table__header > div {
+.main .data-container .data-table .data-table__header tr {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.main .data-container .data-table .data-table__header tr > th {
   align-items: center;
   border-right: 2px solid #25ABC2;
   box-shadow: 2px 0 #25ABC2, -2px 0 rgba(0, 0, 0, 0.1) inset;
@@ -530,44 +542,44 @@ html, body {
   height: 100%;
   position: relative;
 }
-.main .data-container .data-table .data-table__header > div:last-child {
+.main .data-container .data-table .data-table__header tr > th:last-child {
   border: none;
   box-shadow: none;
   width: 89px;
 }
-.main .data-container .data-table .data-table__header .column-name {
+.main .data-container .data-table .data-table__header tr .column-name {
   background-color: #0086A5;
   border-top-left-radius: 8px;
   flex-grow: 1;
   padding-left: 65px;
   width: 177px;
 }
-.main .data-container .data-table .data-table__header .column-surname {
+.main .data-container .data-table .data-table__header tr .column-surname {
   background-color: #0390AE;
   flex-grow: 1;
   padding-left: 25px;
   width: 144px;
 }
-.main .data-container .data-table .data-table__header .column-city {
+.main .data-container .data-table .data-table__header tr .column-city {
   background-color: #0899b8;
   flex-grow: 1;
   padding-left: 18px;
   width: 142px;
 }
-.main .data-container .data-table .data-table__header .column-email {
+.main .data-container .data-table .data-table__header tr .column-email {
   background-color: #0DADCA;
   flex-grow: 1;
   padding-left: 18px;
   width: 229px;
 }
-.main .data-container .data-table .data-table__header .column-phone {
+.main .data-container .data-table .data-table__header tr .column-phone {
   background-color: #11B6D4;
   flex-grow: 1;
   justify-content: flex-end;
   padding-right: 26px;
   width: 168px;
 }
-.main .data-container .data-table .data-table__header .column-actions {
+.main .data-container .data-table .data-table__header tr .column-actions {
   background-color: #14C0DD;
   border-top-right-radius: 8px;
   width: 118px;
@@ -586,15 +598,17 @@ html, body {
   display: flex;
   height: 43px;
 }
-.main .data-container .data-table .data-table__data .data-item > div {
+.main .data-container .data-table .data-table__data .data-item > th {
   align-items: center;
   display: flex;
+  font-weight: normal;
   height: 100%;
 }
 .main .data-container .data-table .data-table__data .data-item:hover {
   background-color: #E6F6F9;
 }
 .main .data-container .data-table .data-table__data .data-item .data-item__name {
+  display: flex;
   flex-grow: 1;
   width: 177px;
 }
