@@ -1,14 +1,14 @@
-let data,				// kintamasis duomenų saugojimui iš failo
-accountOpened,			// kintamasis saugoti rodymo account'o stadiją true/false
-citiesOpened,			// kintamasis saugoti miestų select'o stadiją true/false
-cities,					// kintamasis saugoti iš varototjų duomenų gautus miestus masyve
-filterCitySelect,		// kintamasis saugoti pasirinktą miesta, naudojama filtravimui
-filterActiveSelect,		// kintamasis saugoti pasirinktą aktyvumą, naudojama filtravimui
-nameFilterValue,		// kintamasis saugoti įvestą vartotojo vardą, naudojama filtravimui
-nameSortDirection,		// kintamasis saugoti vardo rūšiavimo kryptį
-surnameSortDirection,	// kintamasis saugoti pavardės rūšiavimo kryptį
-userData,				// kintamasis saugoti naujo ar redaguojamo vartotojo duomenis
-lastId;					// kintamasis saugoti einamajį Id, naudojamas pridedant naują vartotoją į data
+let data,				// var for "server data stprong"
+accountOpened,			// var for account dialog display status true/false
+citiesOpened,			// var for cities dialog display status true/false
+cities,					// var for user cities array 
+filterCitySelect,		// var to store selected city, for filtering
+filterActiveSelect,		// var to store selected activity, for filtering
+nameFilterValue,		// var to store input name, for filtering
+nameSortDirection,		// var to store name sorting direction
+surnameSortDirection,	// var to store surname sorting direction
+userData,				// var to store selected or edited user data
+lastId;					// var to store last item id from server, is used when assigning id for new user
 
 const regEx = /[^a-zA-Z\s]/g;
 
