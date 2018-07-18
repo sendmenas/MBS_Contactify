@@ -220,8 +220,6 @@ function resetFilter() {
 	cityFilterSelection.innerText = "City";
 	filterActiveSelect = null;
 	activeCheckboxContainer.classList.remove("checkbox__input--checked");
-	sortName.className = "sort-arrow-inactive";
-	sortSurname.className = "sort-arrow-inactive";
 	filterTable();
 }
 
