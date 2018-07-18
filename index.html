@@ -24,9 +24,9 @@
                 </div>
                 <div class="header__account">
                 	<div class="account-container" id="userAccount">
-    	                <div class="user-icon-white"></div>
+    	                <div class="account-container__avatar"></div>
     	                <div>Jorah Mormont</div>
-    	                <div class="dropdown-arrow-white"></div>
+    	                <div class="account-container__arrow"></div>
     	            </div>
     	            <div class="account-actions" id="userAccountActions">
     	            	<div class="account-actions__row">
@@ -55,7 +55,7 @@
                     </div>
                     <div class="filter-city" id="cityFilter">
                         <div id="cityFilterSelection">City</div>
-                        <div class="dropdown-dark"></div>
+                        <div class="filter-city__arrow"></div>
                         <div class="filter-city__select" id="citySelect">
                             <div>City</div>
                             <div class="cities-container" id="citySelectContainer"></div>
@@ -80,7 +80,7 @@
                         ADD NEW CONTRACT
                     </div>
                 </div>
-                <div class="data-container">
+                <div class="main__container">
     	            <aside class="user-block">
     	                <div class="user-block__avatar" id="userAvatar"></div>
     	                <table class="user-block__data">
@@ -109,18 +109,18 @@
     				<table class="data-table">
     					<thead class="data-table__header">
                             <tr>
-        						<th class="column-name">
+        						<th class="data-table__header__name">
         							<div>Name</div>
         							<div class="sort-arrow-inactive" id="sortName"></div>
         						</th>
-        						<th class="column-surname">
+        						<th class="data-table__header__surname">
                                     <div>Surname</div>
                                     <div class="sort-arrow-inactive" id="sortSurname"></div>
                                 </th>
-        						<th class="column-city">City</th>
-        						<th class="column-email">Email</th>
-        						<th class="column-phone">Phone</th>
-        						<th class="column-actions"></th>
+        						<th class="data-table__header__city">City</th>
+        						<th class="data-table__header__email">Email</th>
+        						<th class="data-table__header__phone">Phone</th>
+        						<th class="data-table__header__actions"></th>
                             </tr>
     					</thead>
     					<tbody class="data-table__data" id="dataTable"></tbody>
