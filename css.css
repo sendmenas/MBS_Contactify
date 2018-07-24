@@ -1,4 +1,4 @@
-.user-data-dialog .user-data-dialog__container, .footer .footer__left, .user-block .user-block__data, .user-block, .main .main__container .data-table .data-table__data, .account-actions, .page, html, body {
+.user-data-dialog .user-data-dialog__container, .footer .footer__left, .data-table .data-table__data, .user-block .user-block__data, .user-block, .account-actions, .page, html, body {
   display: flex;
   flex-direction: column;
 }
@@ -257,83 +257,6 @@ html, body {
 .main .main__container {
   display: flex;
 }
-.main .main__container .data-table {
-  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  border-spacing: 0;
-  flex-grow: 1;
-  height: 401px;
-}
-.main .main__container .data-table .data-table__header {
-  align-items: center;
-  color: white;
-  display: flex;
-  flex-grow: 1;
-  font-weight: bold;
-  height: 50px;
-}
-.main .main__container .data-table .data-table__header tr {
-  display: flex;
-  height: 100%;
-  width: 100%;
-}
-.main .main__container .data-table .data-table__header tr > th {
-  align-items: center;
-  border-right: 2px solid #25ABC2;
-  box-shadow: 2px 0 #25ABC2, -2px 0 rgba(0, 0, 0, 0.1) inset;
-  display: flex;
-  height: 100%;
-  position: relative;
-}
-.main .main__container .data-table .data-table__header tr > th:last-child {
-  border: none;
-  box-shadow: none;
-  width: 89px;
-}
-.main .main__container .data-table .data-table__header tr .data-table__header__name {
-  background-color: #0086A5;
-  border-top-left-radius: 8px;
-  flex-grow: 1;
-  padding-left: 65px;
-  width: 177px;
-}
-.main .main__container .data-table .data-table__header tr .data-table__header__surname {
-  background-color: #0390AE;
-  flex-grow: 1;
-  padding-left: 25px;
-  width: 144px;
-}
-.main .main__container .data-table .data-table__header tr .data-table__header__city {
-  background-color: #0899b8;
-  flex-grow: 1;
-  padding-left: 18px;
-  width: 142px;
-}
-.main .main__container .data-table .data-table__header tr .data-table__header__email {
-  background-color: #0DADCA;
-  flex-grow: 1;
-  padding-left: 18px;
-  width: 229px;
-}
-.main .main__container .data-table .data-table__header tr .data-table__header__phone {
-  background-color: #11B6D4;
-  flex-grow: 1;
-  justify-content: flex-end;
-  padding-right: 26px;
-  width: 168px;
-}
-.main .main__container .data-table .data-table__header tr .data-table__header__actions {
-  background-color: #14C0DD;
-  border-top-right-radius: 8px;
-  width: 118px;
-}
-.main .main__container .data-table .data-table__data {
-  background-color: white;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  height: 351px;
-  overflow: auto;
-}
 
 .filter-name {
   border-radius: 18px;
@@ -571,6 +494,84 @@ html, body {
 }
 .user-block .user-block__data {
   width: 100%;
+}
+
+.data-table {
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  border-spacing: 0;
+  flex-grow: 1;
+  height: 401px;
+}
+.data-table .data-table__header {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-grow: 1;
+  font-weight: bold;
+  height: 50px;
+}
+.data-table .data-table__header tr {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.data-table .data-table__header tr > th {
+  align-items: center;
+  border-right: 2px solid #25ABC2;
+  box-shadow: 2px 0 #25ABC2, -2px 0 rgba(0, 0, 0, 0.1) inset;
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+.data-table .data-table__header tr > th:last-child {
+  border: none;
+  box-shadow: none;
+  width: 89px;
+}
+.data-table .data-table__header tr .data-table__header__name {
+  background-color: #0086A5;
+  border-top-left-radius: 8px;
+  flex-grow: 1;
+  padding-left: 65px;
+  width: 177px;
+}
+.data-table .data-table__header tr .data-table__header__surname {
+  background-color: #0390AE;
+  flex-grow: 1;
+  padding-left: 25px;
+  width: 144px;
+}
+.data-table .data-table__header tr .data-table__header__city {
+  background-color: #0899b8;
+  flex-grow: 1;
+  padding-left: 18px;
+  width: 142px;
+}
+.data-table .data-table__header tr .data-table__header__email {
+  background-color: #0DADCA;
+  flex-grow: 1;
+  padding-left: 18px;
+  width: 229px;
+}
+.data-table .data-table__header tr .data-table__header__phone {
+  background-color: #11B6D4;
+  flex-grow: 1;
+  justify-content: flex-end;
+  padding-right: 26px;
+  width: 168px;
+}
+.data-table .data-table__header tr .data-table__header__actions {
+  background-color: #14C0DD;
+  border-top-right-radius: 8px;
+  width: 118px;
+}
+.data-table .data-table__data {
+  background-color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 351px;
+  overflow: auto;
 }
 
 .data-row {
