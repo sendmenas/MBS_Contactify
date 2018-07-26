@@ -1,0 +1,5 @@
+// MIXINS
+@mixin setBox($property) {
+  height: $property;
+  width: $property;
+}
