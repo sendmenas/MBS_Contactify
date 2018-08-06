@@ -6,7 +6,7 @@
 	justify-content: center;
 	position: absolute;
 	top: 0;
-	.user-data-dialog__container {
+	&__container {
 		@extend %flex-column;
     	background-color: $input-background;
 		border: 2px solid $border-dark;
@@ -20,11 +20,11 @@
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
-	.container-row__label {
+	&__label {
 		padding: 5px 10px;
 		width: 100px;
 	}
-	.container-row__input {
+	&__input {
 		border: 2px solid $border-dark;
 		box-shadow: 0 0 5px 3px $shadow;
 		border-radius: 5px;
