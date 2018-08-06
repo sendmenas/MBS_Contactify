@@ -10,7 +10,7 @@
     <body>
         <div class="page">
             <header class="header">
-                <div class="header__logo"></div>
+                <i class="header__logo"></i>
                 <nav class="header__tabs">
                     <ul>
                         <li class="header-tab">dashboard</li>
@@ -20,7 +20,7 @@
                 </nav>
                 <div class="header__search">
                     <input class="search-input" placeholder="Search" type="text">
-                    <div class="search-icon"></div>
+                    <i class="search-icon"></i>
                 </div>
                 <div class="header__account">
                 	<button class="account-container" id="userAccount">
@@ -31,19 +31,19 @@
     	            <ul class="account-actions" id="userAccountActions">
     	            	<li class="account-actions__row">
     	            		<i class="row-icon row-icon--groups"></i>
-    	            		<div>Groups</div>
+    	            		Groups
     	            	</li>
     	            	<li class="account-actions__row">
     	            		<i class="row-icon row-icon--contacted"></i>
-    	            		<div>Frequently contacted</div>
+    	            		Frequently contacted
     	            	</li>
     	            	<li class="account-actions__row">
     	            		<i class="row-icon row-icon--prefences"></i>
-    	            		<div>Prefences</div>
+    	            		Prefences
     	            	</li>
     	            	<li class="account-actions__row">
     	            		<i class="row-icon row-icon--logout"></i>
-    	            		<div class="row-label">Log out</div>
+    	            		Log out
     	            	</li>
     	            </ul>
                 </div>
@@ -111,11 +111,11 @@
                             <tr>
         						<th class="data-table__header__name">
         							<div>Name</div>
-        							<div class="sort-arrow-inactive" id="sortName"></div>
+        							<i class="sort-arrow-inactive" id="sortName"></i>
         						</th>
         						<th class="data-table__header__surname">
                                     <div>Surname</div>
-                                    <div class="sort-arrow-inactive" id="sortSurname"></div>
+                                    <i class="sort-arrow-inactive" id="sortSurname"></i>
                                 </th>
         						<th class="data-table__header__city">City</th>
         						<th class="data-table__header__email">Email</th>
@@ -191,32 +191,32 @@
             </footer>
             <dialog  class="user-data-dialog" id="userDataDialog">
                 <form class="user-data-dialog__container">
-                    <div class="user-data-dialog__container__close" id="userDataDialogClose"></div>
-                    <div class="user-data-dialog__container__row">
-                        <label for="userDataDialogName" class="user-data-dialog__container__row__label">Name:</label>
-                        <input type="text" class="user-data-dialog__container__row__input" id="userDataDialogName">
+                    <div class="button-close" id="userDataDialogClose"></div>
+                    <div class="container-row">
+                        <label for="userDataDialogName" class="container-row__label">Name:</label>
+                        <input type="text" class="container-row__input" id="userDataDialogName">
                     </div>
-                    <div class="user-data-dialog__container__row">
-                        <label for="userDataDialogSurname" class="user-data-dialog__container__row__label">Surname:</label>
-                        <input type="text" class="user-data-dialog__container__row__input" id="userDataDialogSurname">
+                    <div class="container-row">
+                        <label for="userDataDialogSurname" class="container-row__label">Surname:</label>
+                        <input type="text" class="container-row__input" id="userDataDialogSurname">
                     </div>
-                    <div class="user-data-dialog__container__row">
-                        <label for="userDataDialogAvatar" class="user-data-dialog__container__row__label">Avatar:</label>
-                        <input type="text" class="user-data-dialog__container__row__input" id="userDataDialogAvatar">
+                    <div class="container-row">
+                        <label for="userDataDialogAvatar" class="container-row__label">Avatar:</label>
+                        <input type="text" class="container-row__input" id="userDataDialogAvatar">
                     </div>
-                    <div class="user-data-dialog__container__row">
-                        <label for="userDataDialogCity" class="user-data-dialog__container__row__label">City:</label>
-                        <input type="text" class="user-data-dialog__container__row__input" id="userDataDialogCity">
+                    <div class="container-row">
+                        <label for="userDataDialogCity" class="container-row__label">City:</label>
+                        <input type="text" class="container-row__input" id="userDataDialogCity">
                     </div>
-                    <div class="user-data-dialog__container__row">
-                        <label for="userDataDialogEmail" class="user-data-dialog__container__row__label">Email:</label>
-                        <input type="text" class="user-data-dialog__container__row__input" id="userDataDialogEmail">
+                    <div class="container-row">
+                        <label for="userDataDialogEmail" class="container-row__label">Email:</label>
+                        <input type="text" class="container-row__input" id="userDataDialogEmail">
                     </div>
-                    <div class="user-data-dialog__container__row">
-                        <label for="userDataDialogPhone" class="user-data-dialog__container__row__label">Phone:</label>
-                        <input type="text" class="user-data-dialog__container__row__input" id="userDataDialogPhone">
+                    <div class="container-row">
+                        <label for="userDataDialogPhone" class="container-row__label">Phone:</label>
+                        <input type="text" class="container-row__input" id="userDataDialogPhone">
                     </div>
-                    <div class="user-data-dialog__container__submit" id="userDataDialogSubmit">SUBMIT</div>
+                    <div class="button-submit" id="userDataDialogSubmit">SUBMIT</div>
                 </form>
             </dialog >
         </div>

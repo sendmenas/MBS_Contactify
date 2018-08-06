@@ -13,53 +13,56 @@
     	border-radius: $regular-corner;
     	box-shadow: 0 0 0 2px $filter-field-border;
 		width: 350px;
-		.user-data-dialog__container__close {
-			@include setBox(32px);
-			align-self: flex-end;
-			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAZlBMVEUAAAAkbW0ffnoigHohf3ohgHohf3ofenoif3ohgHoggIAhgHohf3oggHUhgHohf3ogf3sffnojgHgrgIAifX0hf3ohgHoifnshgHokeXkhgHoifnshgHkhf3oAgIAggHshf3oAAACE5WvyAAAAIHRSTlMAB0mYwdrzGZfyCIT1GMjZh0EkDC3j6lOsFfBZdOUCngkludsAAAABYktHRACIBR1IAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4gcMFQkeXo6UMAAAAP1JREFUOMuFU+0SgjAMK58ioA7wA1Qg7/+UpszDqdy1P+CWZFvatSJrRHGSZnmepUkcyX/sij3W2Be7H7qsanxFXZUhfzgqeHJN23Vt4066Oh4+/PlC4Hr7ALcrgct53a98P4RHDr0q3meUPP/++DX9uPMW76Oi+I+ngnC15Ef//Ubewltqzbagv2FLMNBpwfqxPt7/c3ST/ic3Pn0urFgkMfP3O0ZgpmKagdEjrEcsCeD80kEVygdIIinQ+OVCzctn8kgDpJIBrQSKgJcWyCQHOvlSrLx0QG4LzCtMk2aaZqHMUpuPZT+32TB2y5lNa7e9PTj26Ik5vBrb4/8CREAuqX1lDWAAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDctMTJUMjE6MDk6MzArMDI6MDBtaeUuAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA3LTEyVDIxOjA5OjMwKzAyOjAwHDRdkgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=');
-			background-repeat: no-repeat;
-			background-size: 32px;
-			background-position: center;
-    		border-radius: $rounded-corner;
-    		box-shadow: 0 0 10px 3px $shadow;
-			cursor: pointer;
-			margin: 10px 10px;
-		}
-		.user-data-dialog__container__submit {
-		    align-items: center;
-		    align-self: center;
-		    background-color: $add-contact-background;
-		    border-radius: $rounded-corner;
-		    box-shadow: 0 0 10px 5px $shadow;
-		    color: white;
-		    cursor: pointer;
-		    display: flex;
-		    height: 30px;
-		    justify-content: center;
-		    margin: 10px 0;
-		    width: 100px;
-		    &:active {
-		    	transform: scale(0.95);
-		    }
-		}
-		.user-data-dialog__container__row {
-			align-items: center;
-			display: flex;
-			justify-content: space-between;
-			.user-data-dialog__container__row__label {
-				padding: 5px 10px;
-				width: 100px;
-			}
-			.user-data-dialog__container__row__input {
-				border: 2px solid $border-dark;
-				box-shadow: 0 0 5px 3px $shadow;
-    			border-radius: 5px;
-    			flex-grow: 1;
-    			font-size: 14px;
-    			height: 30px;
-				margin: 5px 10px;
-    			padding: 0 5px;
-    		}
-		}
 	}
+}
+
+.container-row {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	.container-row__label {
+		padding: 5px 10px;
+		width: 100px;
+	}
+	.container-row__input {
+		border: 2px solid $border-dark;
+		box-shadow: 0 0 5px 3px $shadow;
+		border-radius: 5px;
+		flex-grow: 1;
+		font-size: 14px;
+		height: 30px;
+		margin: 5px 10px;
+		padding: 0 5px;
+	}
+}
+
+.button-close {
+	@include setBox(32px);
+	align-self: flex-end;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAZlBMVEUAAAAkbW0ffnoigHohf3ohgHohf3ofenoif3ohgHoggIAhgHohf3oggHUhgHohf3ogf3sffnojgHgrgIAifX0hf3ohgHoifnshgHokeXkhgHoifnshgHkhf3oAgIAggHshf3oAAACE5WvyAAAAIHRSTlMAB0mYwdrzGZfyCIT1GMjZh0EkDC3j6lOsFfBZdOUCngkludsAAAABYktHRACIBR1IAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4gcMFQkeXo6UMAAAAP1JREFUOMuFU+0SgjAMK58ioA7wA1Qg7/+UpszDqdy1P+CWZFvatSJrRHGSZnmepUkcyX/sij3W2Be7H7qsanxFXZUhfzgqeHJN23Vt4066Oh4+/PlC4Hr7ALcrgct53a98P4RHDr0q3meUPP/++DX9uPMW76Oi+I+ngnC15Ef//Ubewltqzbagv2FLMNBpwfqxPt7/c3ST/ic3Pn0urFgkMfP3O0ZgpmKagdEjrEcsCeD80kEVygdIIinQ+OVCzctn8kgDpJIBrQSKgJcWyCQHOvlSrLx0QG4LzCtMk2aaZqHMUpuPZT+32TB2y5lNa7e9PTj26Ik5vBrb4/8CREAuqX1lDWAAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDctMTJUMjE6MDk6MzArMDI6MDBtaeUuAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA3LTEyVDIxOjA5OjMwKzAyOjAwHDRdkgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=');
+	background-repeat: no-repeat;
+	background-size: 32px;
+	background-position: center;
+	border-radius: $rounded-corner;
+	box-shadow: 0 0 10px 3px $shadow;
+	cursor: pointer;
+	margin: 10px 10px;
+}
+
+.button-submit {
+    align-items: center;
+    align-self: center;
+    background-color: $add-contact-background;
+    border-radius: $rounded-corner;
+    box-shadow: 0 0 10px 5px $shadow;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    margin: 10px 0;
+    width: 100px;
+    &:active {
+    	transform: scale(0.95);
+    }
 }
