@@ -10,7 +10,7 @@
     <body>
         <div class="page">
             <header class="header">
-                <i class="header__logo"></i>
+                <a class="header__logo"></a>
                 <nav class="header__tabs">
                     <a class="header-tab">dashboard</a>
                     <a class="header-tab selected-tab">contacts</a>
@@ -26,24 +26,24 @@
     	                <span>Jorah Mormont</span>
     	                <i class="account-container__arrow"></i>
     	            </button>
-    	            <ul class="account-actions" id="userAccountActions">
-    	            	<li class="account-actions__row">
+    	            <nav class="account-actions" id="userAccountActions">
+    	            	<a class="account-actions__row">
     	            		<i class="row-icon row-icon--groups"></i>
     	            		Groups
-    	            	</li>
-    	            	<li class="account-actions__row">
+    	            	</a>
+    	            	<a class="account-actions__row">
     	            		<i class="row-icon row-icon--contacted"></i>
     	            		Frequently contacted
-    	            	</li>
-    	            	<li class="account-actions__row">
+    	            	</a>
+    	            	<a class="account-actions__row">
     	            		<i class="row-icon row-icon--prefences"></i>
     	            		Prefences
-    	            	</li>
-    	            	<li class="account-actions__row">
+    	            	</a>
+    	            	<a class="account-actions__row">
     	            		<i class="row-icon row-icon--logout"></i>
     	            		Log out
-    	            	</li>
-    	            </ul>
+    	            	</a>
+    	            </nav>
                 </div>
             </header>
             <main class="main">
@@ -53,7 +53,7 @@
                     </div>
                     <div class="filter-city" id="cityFilter">
                         <div id="cityFilterSelection">City</div>
-                        <div class="filter-city__arrow"></div>
+                        <i class="filter-city__arrow"></i>
                         <div class="filter-city__select" id="citySelect">
                             <div>City</div>
                             <div class="cities-container" id="citySelectContainer"></div>
@@ -63,16 +63,10 @@
                         <div class="checkbox__input" id="activeCheckboxContainer">
                             <input type="checkbox" id="activeCheckbox">
                         </div>
-                        <div class="checkbox__label">
-                            Show active
-                        </div>
+                        <div class="checkbox__label">Show active</div>
                     </div>
-                    <button class="filter-button" id="filterButton">
-                        FILTER
-                    </button>
-                    <button class="filter-button" id="resetFilterButton">
-                        RESET
-                    </button>
+                    <button class="filter-button" id="filterButton">FILTER</button>
+                    <button class="filter-button" id="resetFilterButton">RESET</button>
                     <button class="add-contact-button" id="addNewContact">
                         <i class="add-contact-button__plus"></i>
                         ADD NEW CONTRACT
@@ -80,29 +74,23 @@
                 </section>
                 <section class="main__container">
     	            <aside class="user-block">
-    	                <div class="user-block__avatar" id="userAvatar"></div>
-    	                <table class="user-block__data">
-    	                    <tr class="data-row">
-    	                        <th class="data-row__label">Name:</th>
-    	                        <th class="data-row__data" id="userName"></th>
+                        <figure>
+        	                <img class="user-block__avatar" id="userAvatar"></img>
+                        </figure>
+    	                <dl class="user-block__data">
+    	                    <!-- <tr class="data-row"> -->
+    	                        <dt class="data-row__label">Name:</dt>
+    	                        <dd class="data-row__data" id="userName"></dd>
+    	                        <dt class="data-row__label">Surname:</dt>
+    	                        <dd class="data-row__data" id="userSurname"></dd>
+    	                        <dt class="data-row__label">City:</dt>
+    	                        <dd class="data-row__data" id="userCity"></dd>
+    	                        <dt class="data-row__label">Email:</dt>
+    	                        <dd class="data-row__data data-row__data--email" id="userEmail"></dd>
+    	                        <dt class="data-row__label">Phone:</dt>
+    	                        <dd class="data-row__data" id="userPhone"></dd>
     	                    </tr>
-    	                    <tr class="data-row">
-    	                        <th class="data-row__label">Surname:</th>
-    	                        <th class="data-row__data" id="userSurname"></th>
-    	                    </tr>
-    	                    <tr class="data-row">
-    	                        <th class="data-row__label">City:</th>
-    	                        <th class="data-row__data" id="userCity"></th>
-    	                    </tr>
-    	                    <tr class="data-row">
-    	                        <th class="data-row__label">Email:</th>
-    	                        <th class="data-row__data data-row__data--email" id="userEmail"></th>
-    	                    </tr>
-    	                    <tr class="data-row">
-    	                        <th class="data-row__label">Phone:</th>
-    	                        <th class="data-row__data" id="userPhone"></th>
-    	                    </tr>
-    	                </table>
+    	                </dl>
     	            </aside>
     				<table class="data-table">
     					<thead class="data-table__header">
@@ -140,10 +128,10 @@
             	</section>
             	<section class="footer__center">
             		<div class="top-box">
-            			<div class="top-box__icon"></div>
+            			<i class="top-box__icon"></i>
             			<div>
-            				<div>Last synced:</div>
-            				<div id="syncTimeContainer">Not synced</div>
+            				<p>Last synced:</p>
+            				<p id="syncTimeContainer">Not synced</p>
             			</div>
             			<button class="top-box__sync-container" id="syncButton">
             				<i class="sync-icon" id="syncIndicator"></i>
@@ -151,10 +139,10 @@
             			</button>
             		</div>
             		<div class="bottom-box">
-            			<div  class="bottom-box__icon"></div>
+            			<i  class="bottom-box__icon"></i>
             			<div>
-            				<div>Help Desk and Resolution center available:</div>
-            				<div>I-IV 8:00-18:00, V 8:00-16:45</div>
+            				<p>Help Desk and Resolution center available:</p>
+            				<p>I-IV 8:00-18:00, V 8:00-16:45</p>
             			</div>
             		</div>
             	</section>
@@ -169,7 +157,7 @@
             </footer>
             <dialog  class="user-data-dialog" id="userDataDialog">
                 <form class="user-data-dialog__container">
-                    <div class="button-close" id="userDataDialogClose"></div>
+                    <button class="button-close" id="userDataDialogClose"></button>
                     <div class="container-row">
                         <label for="userDataDialogName" class="container-row__label">Name:</label>
                         <input type="text" class="container-row__input" id="userDataDialogName">
@@ -194,7 +182,7 @@
                         <label for="userDataDialogPhone" class="container-row__label">Phone:</label>
                         <input type="text" class="container-row__input" id="userDataDialogPhone">
                     </div>
-                    <div class="button-submit" id="userDataDialogSubmit">SUBMIT</div>
+                    <button class="button-submit" id="userDataDialogSubmit">SUBMIT</button>
                 </form>
             </dialog >
         </div>
