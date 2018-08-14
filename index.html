@@ -12,11 +12,9 @@
             <header class="header">
                 <i class="header__logo"></i>
                 <nav class="header__tabs">
-                    <ul>
-                        <li class="header-tab">dashboard</li>
-                        <li class="header-tab selected-tab">contacts</li>
-                        <li class="header-tab">notifications</li>
-                    </ul>
+                    <a class="header-tab">dashboard</a>
+                    <a class="header-tab selected-tab">contacts</a>
+                    <a class="header-tab">notifications</a>
                 </nav>
                 <div class="header__search">
                     <input class="search-input" placeholder="Search" type="text">
@@ -49,7 +47,7 @@
                 </div>
             </header>
             <main class="main">
-                <header class="main__filter">
+                <section class="main__filter">
                     <div class="filter-name">
                         <input class="filter-input" placeholder="Name" type="text" id="nameFilter">
                     </div>
@@ -79,8 +77,8 @@
                         <i class="add-contact-button__plus"></i>
                         ADD NEW CONTRACT
                     </button>
-                </header>
-                <div class="main__container">
+                </section>
+                <section class="main__container">
     	            <aside class="user-block">
     	                <div class="user-block__avatar" id="userAvatar"></div>
     	                <table class="user-block__data">
@@ -110,11 +108,11 @@
     					<thead class="data-table__header">
                             <tr>
         						<th class="data-table__header__name">
-        							<div>Name</div>
+        							Name
         							<i class="sort-arrow-inactive" id="sortName"></i>
         						</th>
         						<th class="data-table__header__surname">
-                                    <div>Surname</div>
+                                    Surname
                                     <i class="sort-arrow-inactive" id="sortSurname"></i>
                                 </th>
         						<th class="data-table__header__city">City</th>
@@ -125,44 +123,32 @@
     					</thead>
     					<tbody class="data-table__data" id="dataTable"></tbody>
     				</table>
-    			</div>
+    			</section>
             </main>
             <footer class="footer">
-            	<nav class="footer__left">
-            		<ul class="left-links">
-            			<li>
-            				<a href="">Dashboard</a>
-            			</li>
-            			<li>
-            				<a href="">Contacts</a>
-            			</li>
-            			<li>
-            				<a href="">Notifications</a>
-            			</li>
-            		</ul>
-            		<nav class="left-copyright">
-            			<div class="copyright-label">&copy; 2015 Contactify</div>
-            			<ul class="left-links-bottom">
-            				<li>
-            					<a href="">About</a>
-            				</li>
-            				<li>
-            					<a href="">Privacy</a>
-            				</li>
-            			</ul>
+            	<section class="footer__left">
+            		<nav class="left-links">
+        				<a>Dashboard</a>
+        				<a>Contacts</a>
+        				<a>Notifications</a>
             		</nav>
-            	</nav>
-            	<div class="footer__center">
+            		<nav class="left-copyright">
+            			<span class="copyright-label">&copy; 2015 Contactify</span>
+    					<a>About</a>
+    					<a>Privacy</a>
+            		</nav>
+            	</section>
+            	<section class="footer__center">
             		<div class="top-box">
             			<div class="top-box__icon"></div>
             			<div>
             				<div>Last synced:</div>
             				<div id="syncTimeContainer">Not synced</div>
             			</div>
-            			<div class="top-box__sync-container" id="syncButton">
-            				<div class="sync-icon" id="syncIndicator"></div>
-            				<div>Force sync</div>
-            			</div>
+            			<button class="top-box__sync-container" id="syncButton">
+            				<i class="sync-icon" id="syncIndicator"></i>
+            				Force sync
+            			</button>
             		</div>
             		<div class="bottom-box">
             			<div  class="bottom-box__icon"></div>
@@ -171,23 +157,15 @@
             				<div>I-IV 8:00-18:00, V 8:00-16:45</div>
             			</div>
             		</div>
-            	</div>
-            	<nav class="footer__right">
-            		<ul class="right-links">
-            			<li>
-            				<a href="">Groups</a>
-            			</li>
-            			<li>
-            				<a href="">Frequently contacted</a>
-            			</li>
-            			<li>
-            				<a href="">Preferences</a>
-            			</li>
-            			<li>
-            				<a href="">Log out</a>
-            			</li>
-            		</ul>
-            	</nav>
+            	</section>
+            	<section class="footer__right">
+            		<nav class="right-links">
+        				<a>Groups</a>
+        				<a>Frequently contacted</a>
+        				<a>Preferences</a>
+        				<a>Log out</a>
+            		</nav>
+            	</section>
             </footer>
             <dialog  class="user-data-dialog" id="userDataDialog">
                 <form class="user-data-dialog__container">

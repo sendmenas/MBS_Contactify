@@ -61,16 +61,16 @@ const userDataDialogPhone = document.getElementById('userDataDialogPhone');
 // HTML template'as lentelės įrašui
 const Item = ({id, avatar, active, name, surname, city, email, phone, online}) => `
 	<th class="data-item__name">
-		<div class="${online}"></div>
-		<div>${name}</div>
+		<i class="${online}"></i>
+		${name}
 	</th>
 	<th class="data-item__surname">${surname}</th>
 	<th class="data-item__city">${city}</th>
 	<th class="data-item__email">${email}</th>
 	<th class="data-item__phone">${phone}</th>
 	<th class="data-item__actions">
-		<div class="edit-item"></div>
-		<div class="delete-item"></div>
+		<button class="edit-item"></button>
+		<button class="delete-item"></button>
 	</th>
 `;
 
