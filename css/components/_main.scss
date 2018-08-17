@@ -8,6 +8,10 @@
 	}
 	.main__container {
 		display: flex;
+		section {
+			display: flex;
+			flex-grow: 1;
+		}
 	}
 }
 
@@ -183,6 +187,7 @@
 	justify-content: center;
 	margin-right: 28px;
 	outline: none;
+	text-transform: uppercase;
 	width: 106px;
 	&:active {
 		transform: scale(0.95);
@@ -207,6 +212,7 @@
 	margin-left: auto;
 	outline: none;
 	padding: 0;
+	text-transform: uppercase;
 	width: 224px;
 	&:active {
 		transform: scale(0.95);
@@ -248,8 +254,9 @@
 		margin: 18px 0 22px;
 	}
 	.user-block__data {
-		@extend %flex-column;
-		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 10px;
 	}
 }
 
@@ -332,36 +339,31 @@
 }
 
 
-.data-row {
+.contract-label {
+	color: $light-braun-font;
 	display: flex;
-	justify-content: space-between;
-	padding-bottom: 10px;
-	.data-row__label {
-		color: $light-braun-font;
-		display: flex;
-		font-size: 14px;
-		font-weight: normal;
-		justify-content: flex-end;
-		margin-left: 17px;
-		width: 63px;
-	}
-	.data-row__data {
-		color: $braun-font;
-		display: flex;
-		font-size: 14px;
-		font-weight: normal;
-		justify-content: flex-start;
-		margin-right: 17px;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-		width: 120px;
-		.data-row__data--email {
-			color: $email-link-color;
-			cursor: pointer;
-			display: block;
-			text-decoration: underline;
-		}
+	font-size: 14px;
+	font-weight: normal;
+	justify-content: flex-end;
+	margin: 0 17px 10px;
+	width: 63px;
+}
+
+.contract-data {
+	color: $braun-font;
+	font-size: 14px;
+	font-weight: normal;
+	justify-content: flex-start;
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 120px;
+	.contract-data--email {
+		color: $email-link-color;
+		cursor: pointer;
+		display: block;
+		text-decoration: underline;
 	}
 }
 

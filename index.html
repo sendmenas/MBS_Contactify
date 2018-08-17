@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <title>Contactify</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
         <link href="./css/css.css" rel="stylesheet" type="text/css">
     </head>
@@ -20,7 +21,7 @@
                     <input class="search-input" placeholder="Search" type="text">
                     <i class="search-icon"></i>
                 </div>
-                <div class="header__account">
+                <section class="header__account">
                 	<button class="account-container" id="userAccount">
     	                <i class="account-container__avatar"></i>
     	                <span>Jorah Mormont</span>
@@ -44,7 +45,7 @@
     	            		Log out
     	            	</a>
     	            </nav>
-                </div>
+                </section>
             </header>
             <main class="main">
                 <section class="main__filter">
@@ -54,10 +55,10 @@
                     <div class="filter-city" id="cityFilter">
                         <div id="cityFilterSelection">City</div>
                         <i class="filter-city__arrow"></i>
-                        <div class="filter-city__select" id="citySelect">
+                        <section class="filter-city__select" id="citySelect">
                             <div>City</div>
                             <div class="cities-container" id="citySelectContainer"></div>
-                        </div>
+                        </section>
                     </div>
                     <div class="checkbox">
                         <div class="checkbox__input" id="activeCheckboxContainer">
@@ -65,11 +66,11 @@
                         </div>
                         <div class="checkbox__label">Show active</div>
                     </div>
-                    <button class="filter-button" id="filterButton">FILTER</button>
-                    <button class="filter-button" id="resetFilterButton">RESET</button>
+                    <button class="filter-button" id="filterButton">filter</button>
+                    <button class="filter-button" id="resetFilterButton">reset</button>
                     <button class="add-contact-button" id="addNewContact">
                         <i class="add-contact-button__plus"></i>
-                        ADD NEW CONTRACT
+                        add new contract
                     </button>
                 </section>
                 <section class="main__container">
@@ -78,39 +79,39 @@
         	                <img class="user-block__avatar" id="userAvatar"></img>
                         </figure>
     	                <dl class="user-block__data">
-    	                    <!-- <tr class="data-row"> -->
-    	                        <dt class="data-row__label">Name:</dt>
-    	                        <dd class="data-row__data" id="userName"></dd>
-    	                        <dt class="data-row__label">Surname:</dt>
-    	                        <dd class="data-row__data" id="userSurname"></dd>
-    	                        <dt class="data-row__label">City:</dt>
-    	                        <dd class="data-row__data" id="userCity"></dd>
-    	                        <dt class="data-row__label">Email:</dt>
-    	                        <dd class="data-row__data data-row__data--email" id="userEmail"></dd>
-    	                        <dt class="data-row__label">Phone:</dt>
-    	                        <dd class="data-row__data" id="userPhone"></dd>
-    	                    </tr>
+	                        <dt class="contract-label">Name:</dt>
+	                        <dd class="contract-data" id="userName"></dd>
+	                        <dt class="contract-label">Surname:</dt>
+	                        <dd class="contract-data" id="userSurname"></dd>
+	                        <dt class="contract-label">City:</dt>
+	                        <dd class="contract-data" id="userCity"></dd>
+	                        <dt class="contract-label">Email:</dt>
+	                        <dd class="contract-data contract-data--email" id="userEmail"></dd>
+	                        <dt class="contract-label">Phone:</dt>
+	                        <dd class="contract-data" id="userPhone"></dd>
     	                </dl>
     	            </aside>
-    				<table class="data-table">
-    					<thead class="data-table__header">
-                            <tr>
-        						<th class="data-table__header__name">
-        							Name
-        							<i class="sort-arrow-inactive" id="sortName"></i>
-        						</th>
-        						<th class="data-table__header__surname">
-                                    Surname
-                                    <i class="sort-arrow-inactive" id="sortSurname"></i>
-                                </th>
-        						<th class="data-table__header__city">City</th>
-        						<th class="data-table__header__email">Email</th>
-        						<th class="data-table__header__phone">Phone</th>
-        						<th class="data-table__header__actions"></th>
-                            </tr>
-    					</thead>
-    					<tbody class="data-table__data" id="dataTable"></tbody>
-    				</table>
+                    <section>
+        				<table class="data-table">
+        					<thead class="data-table__header">
+                                <tr>
+            						<th class="data-table__header__name">
+            							Name
+            							<i class="sort-arrow-inactive" id="sortName"></i>
+            						</th>
+            						<th class="data-table__header__surname">
+                                        Surname
+                                        <i class="sort-arrow-inactive" id="sortSurname"></i>
+                                    </th>
+            						<th class="data-table__header__city">City</th>
+            						<th class="data-table__header__email">Email</th>
+            						<th class="data-table__header__phone">Phone</th>
+            						<th class="data-table__header__actions"></th>
+                                </tr>
+        					</thead>
+        					<tbody class="data-table__data" id="dataTable"></tbody>
+        				</table>
+                    </section>
     			</section>
             </main>
             <footer class="footer">
@@ -128,7 +129,7 @@
             	</section>
             	<section class="footer__center">
             		<div class="top-box">
-            			<i class="top-box__icon"></i>
+            			<i class="fa fa-cloud-upload" aria-hidden="true"></i>
             			<div>
             				<p>Last synced:</p>
             				<p id="syncTimeContainer">Not synced</p>
@@ -158,31 +159,31 @@
             <dialog  class="user-data-dialog" id="userDataDialog">
                 <form class="user-data-dialog__container">
                     <button class="button-close" id="userDataDialogClose"></button>
-                    <div class="container-row">
-                        <label for="userDataDialogName" class="container-row__label">Name:</label>
-                        <input type="text" class="container-row__input" id="userDataDialogName">
+                    <div class="data-pair">
+                        <label for="userDataDialogName" class="data-pair__label">Name:</label>
+                        <input type="text" class="data-pair__input" id="userDataDialogName">
                     </div>
-                    <div class="container-row">
-                        <label for="userDataDialogSurname" class="container-row__label">Surname:</label>
-                        <input type="text" class="container-row__input" id="userDataDialogSurname">
+                    <div class="data-pair">
+                        <label for="userDataDialogSurname" class="data-pair__label">Surname:</label>
+                        <input type="text" class="data-pair__input" id="userDataDialogSurname">
                     </div>
-                    <div class="container-row">
-                        <label for="userDataDialogAvatar" class="container-row__label">Avatar:</label>
-                        <input type="text" class="container-row__input" id="userDataDialogAvatar">
+                    <div class="data-pair">
+                        <label for="userDataDialogAvatar" class="data-pair__label">Avatar:</label>
+                        <input type="text" class="data-pair__input" id="userDataDialogAvatar">
                     </div>
-                    <div class="container-row">
-                        <label for="userDataDialogCity" class="container-row__label">City:</label>
-                        <input type="text" class="container-row__input" id="userDataDialogCity">
+                    <div class="data-pair">
+                        <label for="userDataDialogCity" class="data-pair__label">City:</label>
+                        <input type="text" class="data-pair__input" id="userDataDialogCity">
                     </div>
-                    <div class="container-row">
-                        <label for="userDataDialogEmail" class="container-row__label">Email:</label>
-                        <input type="text" class="container-row__input" id="userDataDialogEmail">
+                    <div class="data-pair">
+                        <label for="userDataDialogEmail" class="data-pair__label">Email:</label>
+                        <input type="text" class="data-pair__input" id="userDataDialogEmail">
                     </div>
-                    <div class="container-row">
-                        <label for="userDataDialogPhone" class="container-row__label">Phone:</label>
-                        <input type="text" class="container-row__input" id="userDataDialogPhone">
+                    <div class="data-pair">
+                        <label for="userDataDialogPhone" class="data-pair__label">Phone:</label>
+                        <input type="text" class="data-pair__input" id="userDataDialogPhone">
                     </div>
-                    <button class="button-submit" id="userDataDialogSubmit">SUBMIT</button>
+                    <button class="button-submit" id="userDataDialogSubmit">submit</button>
                 </form>
             </dialog >
         </div>
