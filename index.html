@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <title>Contactify</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <script src="https://use.fontawesome.com/ae250f1b11.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
         <link href="./css/css.css" rel="stylesheet" type="text/css">
     </head>
@@ -54,7 +54,7 @@
                     </div>
                     <div class="filter-city" id="cityFilter">
                         <div id="cityFilterSelection">City</div>
-                        <i class="filter-city__arrow"></i>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                         <section class="filter-city__select" id="citySelect">
                             <div>City</div>
                             <div class="cities-container" id="citySelectContainer"></div>
@@ -69,7 +69,7 @@
                     <button class="filter-button" id="filterButton">filter</button>
                     <button class="filter-button" id="resetFilterButton">reset</button>
                     <button class="add-contact-button" id="addNewContact">
-                        <i class="add-contact-button__plus"></i>
+                        <i class="fa fa-plus add-contact-button__plus" aria-hidden="true"></i>
                         add new contract
                     </button>
                 </section>
@@ -129,18 +129,18 @@
             	</section>
             	<section class="footer__center">
             		<div class="top-box">
-            			<i class="fa fa-cloud-upload" aria-hidden="true"></i>
+            			<i class="fa fa-cloud-upload fa-2x" aria-hidden="true"></i>
             			<div>
             				<p>Last synced:</p>
             				<p id="syncTimeContainer">Not synced</p>
             			</div>
             			<button class="top-box__sync-container" id="syncButton">
-            				<i class="sync-icon" id="syncIndicator"></i>
-            				Force sync
+            				<i class="fa fa-refresh" aria-hidden="true" id="syncIndicator"></i>
+            				<span>Force sync</span>
             			</button>
             		</div>
             		<div class="bottom-box">
-            			<i  class="bottom-box__icon"></i>
+            			<i class="fa fa-stethoscope fa-2x"></i>
             			<div>
             				<p>Help Desk and Resolution center available:</p>
             				<p>I-IV 8:00-18:00, V 8:00-16:45</p>

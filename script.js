@@ -158,10 +158,10 @@ function setFilterCity(event) {
 function setActiveFilter(event) {
 	if (this.checked) {
 		filterActiveSelect = true;
-		activeCheckboxContainer.classList.add("checkbox__input--checked");
+		activeCheckboxContainer.classList.add("input-checked");
 	} else {
 		filterActiveSelect = false;
-		activeCheckboxContainer.classList.remove("checkbox__input--checked");
+		activeCheckboxContainer.classList.remove("input-checked");
 	}
 }
 
@@ -284,9 +284,9 @@ function createItems(instant) {
 	for (item of data) {
 		lastId = lastId > item.id ? lastId : item.id;
 		if (item.active) {
-			item.online = "user-online";
+			item.online = "fa fa-eye user-online-status";
 		} else {
-			item.online = "user-offline";
+			item.online = "fa fa-eye-slash user-online-status";
 		}
 		let newItem = document.createElement('tr');
 		newItem.className = "data-item";
