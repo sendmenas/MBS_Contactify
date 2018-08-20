@@ -69,8 +69,8 @@ const Item = ({id, avatar, active, name, surname, city, email, phone, online}) =
 	<th class="data-item__email">${email}</th>
 	<th class="data-item__phone">${phone}</th>
 	<th class="data-item__actions">
-		<button class="edit-item"></button>
-		<button class="delete-item"></button>
+		<button class="fa fa-pencil item-action" aria-hidden="true"></button>
+		<button class="fa fa-trash item-action"></button>
 	</th>
 `;
 
@@ -220,9 +220,9 @@ function resetFilter() {
 	cityFilterSelection.innerText = "City";
 	filterActiveSelect = null;
 	activeCheckboxContainer.classList.remove("checkbox__input--checked");
-	sortName.className = "sort-arrow-inactive";
+	sortName.className = "fa fa-arrow-down sort-arrow-inactive";
 	nameSortDirection = null;
-	sortSurname.className = "sort-arrow-inactive";
+	sortSurname.className = "fa fa-arrow-down sort-arrow-inactive";
 	surnameSortDirection = null;
 	filterTable();
 }
@@ -329,7 +329,7 @@ function itemSelection(event) {
 
 function sortItemsByName() {
 	if (data != null && data.length > 0) {
-		sortSurname.className = "sort-arrow-inactive";
+		sortSurname.className = "fa fa-arrow-down sort-arrow-inactive";
 		surnameSortDirection = null;
 		switch(nameSortDirection) {
 			case "asc":
@@ -337,21 +337,21 @@ function sortItemsByName() {
 				data.sort(function(a, b) {
 					return a.name < b.name;
 				});
-				sortName.className = "sort-arrow-asc";
+				sortName.className = "fa fa-arrow-up sort-arrow-asc";
 				break;
 			case "desc":
 				nameSortDirection = "asc";
 				data.sort(function(a, b) {
 					return a.name > b.name;
 				});
-				sortName.className = "sort-arrow-desc";
+				sortName.className = "fa fa-arrow-down sort-arrow-desc";
 				break;
 			default:
 				nameSortDirection = "asc";
 				data.sort(function(a, b) {
 					return a.name > b.name;
 				});
-				sortName.className = "sort-arrow-desc";
+				sortName.className = "fa fa-arrow-down sort-arrow-desc";
 				break;
 		}
 		createItems(true);
@@ -361,7 +361,7 @@ function sortItemsByName() {
 
 function sortItemsBySurname() {
 	if (data != null && data.length > 0) {
-		sortName.className = "sort-arrow-inactive";
+		sortName.className = "fa fa-arrow-down sort-arrow-inactive";
 		nameSortDirection = null;
 		switch(surnameSortDirection) {
 			case "asc":
@@ -369,21 +369,21 @@ function sortItemsBySurname() {
 				data.sort(function(a, b) {
 					return a.surname < b.surname;
 				});
-				sortSurname.className = "sort-arrow-asc";
+				sortSurname.className = "fa fa-arrow-up sort-arrow-asc";
 				break;
 			case "desc":
 				surnameSortDirection = "asc";
 				data.sort(function(a, b) {
 					return a.surname > b.surname;
 				});
-				sortSurname.className = "sort-arrow-desc";
+				sortSurname.className = "fa fa-arrow-down sort-arrow-desc";
 				break;
 			default:
 				surnameSortDirection = "desc";
 				data.sort(function(a, b) {
 					return a.surname > b.surname;
 				});
-				sortSurname.className = "sort-arrow-desc";
+				sortSurname.className = "fa fa-arrow-down sort-arrow-desc";
 				break;
 		}
 		createItems(true);

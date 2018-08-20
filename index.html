@@ -19,29 +19,29 @@
                 </nav>
                 <div class="header__search">
                     <input class="search-input" placeholder="Search" type="text">
-                    <i class="search-icon"></i>
+                    <i class="fa fa-search search-icon"></i>
                 </div>
                 <section class="header__account">
                 	<button class="account-container" id="userAccount">
-    	                <i class="account-container__avatar"></i>
+    	                <i class="fa fa-user account-container__avatar"></i>
     	                <span>Jorah Mormont</span>
-    	                <i class="account-container__arrow"></i>
-    	            </button>
+    	                <i class="fa fa-caret-down account-container__arrow"></i>
+    	            </button> 
     	            <nav class="account-actions" id="userAccountActions">
     	            	<a class="account-actions__row">
-    	            		<i class="row-icon row-icon--groups"></i>
+    	            		<i class="fa fa-users row-icon"></i>
     	            		Groups
     	            	</a>
     	            	<a class="account-actions__row">
-    	            		<i class="row-icon row-icon--contacted"></i>
+    	            		<i class="fa fa-comments row-icon"></i>
     	            		Frequently contacted
     	            	</a>
     	            	<a class="account-actions__row">
-    	            		<i class="row-icon row-icon--prefences"></i>
+    	            		<i class="fa fa-wrench row-icon"></i>
     	            		Prefences
     	            	</a>
     	            	<a class="account-actions__row">
-    	            		<i class="row-icon row-icon--logout"></i>
+    	            		<i class="fa fa-power-off row-icon"></i>
     	            		Log out
     	            	</a>
     	            </nav>
@@ -97,11 +97,11 @@
                                 <tr>
             						<th class="data-table__header__name">
             							Name
-            							<i class="sort-arrow-inactive" id="sortName"></i>
+            							<i class="fa fa-arrow-down sort-arrow-inactive" id="sortName"></i>
             						</th>
             						<th class="data-table__header__surname">
                                         Surname
-                                        <i class="sort-arrow-inactive" id="sortSurname"></i>
+                                        <i class="fa fa-arrow-down sort-arrow-inactive" id="sortSurname"></i>
                                     </th>
             						<th class="data-table__header__city">City</th>
             						<th class="data-table__header__email">Email</th>
@@ -158,7 +158,9 @@
             </footer>
             <dialog  class="user-data-dialog" id="userDataDialog">
                 <form class="user-data-dialog__container">
-                    <button class="button-close" id="userDataDialogClose"></button>
+                    <button class="button-close" id="userDataDialogClose">
+                        <i class="fa fa-times fa-2x"></i>
+                    </button>
                     <div class="data-pair">
                         <label for="userDataDialogName" class="data-pair__label">Name:</label>
                         <input type="text" class="data-pair__input" id="userDataDialogName">
